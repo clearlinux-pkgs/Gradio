@@ -1,0 +1,8 @@
+7.2
+gstreamer-dev
+json-glib-dev
+libsoup-dev
+pkgconfig(gstreamer-1.0)
+pkgconfig(gstreamer-pbutils-1.0)
+pkgconfig(json-glib-1.0)
+pkgconfig(libsoup-2.4)
