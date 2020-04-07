@@ -4,7 +4,7 @@
 #
 Name     : Gradio
 Version  : 7.3
-Release  : 2
+Release  : 3
 URL      : https://github.com/haecker-felix/Gradio/archive/v7.3.tar.gz
 Source0  : https://github.com/haecker-felix/Gradio/archive/v7.3.tar.gz
 Summary  : No detailed summary available
@@ -66,20 +66,21 @@ locales components for the Gradio package.
 
 %prep
 %setup -q -n Gradio-7.3
+cd %{_builddir}/Gradio-7.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571408338
+export SOURCE_DATE_EPOCH=1586232956
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain   builddir
 ninja -v -C builddir
