@@ -4,7 +4,7 @@
 #
 Name     : Gradio
 Version  : 7.3
-Release  : 3
+Release  : 4
 URL      : https://github.com/haecker-felix/Gradio/archive/v7.3.tar.gz
 Source0  : https://github.com/haecker-felix/Gradio/archive/v7.3.tar.gz
 Summary  : No detailed summary available
